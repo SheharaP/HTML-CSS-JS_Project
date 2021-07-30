@@ -1,0 +1,28 @@
+{
+    "name": "Dehiwala Zoological Garden",
+    "short_name": "Dehiwala Zoo",
+    "start_url": "Index.html",     
+    "description": "Assignment 2 for WDOS 1",     
+    "lang":"en",     
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "images/favicon-16x16.png",
+            "sizes": "16x16",
+            "type": "image/png"
+        },
+        {
+            "src":  "images/favicon-32x32.png",
+            "sizes": "32x32",
+            "type": "image/png"
+        },
+        {
+            "src":  "images/favicon.ico",
+            "sizes": "32x32",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#0b7959",
+    "background_color": "#000000",
+    "display": "standalone"
+}

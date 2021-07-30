@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0">
+        <meta name="description" content="This is the hoempage for the Dehiwala Zoological and Botanical Garden">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-config" content="images/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+        <link rel="manifest" href="images/site.webmanifest">
+        <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Dehiwala Zoological Garden | Sri Lanka</title>
+        <link rel="stylesheet" href="Styles/normalize.css">
+        <link rel="stylesheet" href="Styles/mobilefirst.css">
+        <link rel="manifest" href="manifest.json"> 
+        
+    </head>
+    <body>
+       <div id="container">
+            <div class="cart">
+                <div class="headNav"><img src="images/emblem_logo.webp" alt="Sri Lankan Emblem"></div>
+                    <nav class="mainNav">
+                      <ul>
+                        <li>DEHIWALA NATIONAL<br> 
+                            ZOOLOGICAL <br>
+                            GARDEN | SRI LANKA</li>
+        
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Activities.html">Activities</a></li>
+                        <li><a href="Animals&Plants.html">Animals & Plants</a></li>
+                        <li><a href="ContactUs.html">Contact Us</a></li>
+                        <li><a href="PlanYourVisit.html">Plan your visit</a></li>
+                        <li><a href ="Purchase&Donate.html">Purchase & Donate</a></li>
+                    </ul>
+                            
+                    </nav>
+                </div>
+            </div>
+
+            <div id="purchaseContainer">        
+                <header id="pdHeader">
+                    <h1>PURCHASE TICKETS</h1>
+                </header>
+        <main>
+            
+                <section class="purchaseSec">
+                    <table>
+                      <caption>PRICING</caption>
+                        <tbody>    
+                            <tr>
+                                <td><button class="accordion" id="dayPass">Day Pass <i class="arrow down"></i></button>
+                                  <div class="panel">
+                                    <form action="/action_page.php">
+                                      
+                                      <fieldset>
+                                        <legend>Tickets</legend>
+                                      <p>
+                                        <label>Adult </label>  
+                                        <label>LKR 1000.00 </label>
+                                        <input type="number" id="result1" class ="result" value="0" min="0" max="5">
+                                        <br>
+                                      </p>
+                                      <p>
+                                        <label>Children(Age 3-12) </label>  
+                                        <label>LKR 500.00 </label> 
+                                        <input type="number" id="result2" class ="result" value="0" min="0" max="5">
+                                       
+                                        <br>
+                                      </p>
+                                        <label>Duration</label>   
+                                          <select name="hours" class="hours" id="hours1">
+                                            <option value="0">3 Hours</option>
+                                            <option value="250">1/2 Day</option>
+                                            <option value="500">Full Day</option>
+                                            <option value="1000">2 days</option>
+                                          </select><br>
+                                       
+                                      </fieldset>
+                                        <div class="fav" id="fav1">
+                                          <i></i>
+                                        </div>
+                                        <p>Current Order:</p>
+                                        <div id="itemOrder1"  class="itemOrder"> </div> <br><br>
+                                        <label>Current total(LKR): </label>
+                                          <input type="number" id="totalResult1" class="totalResult" value="0.00"><br>
+                                          <button type="button" id="buttonOrder1" class="buttonOrder" >Add to order</button>
+                                    </form>
+
+                                  </div>
+                                </td>
+                                <td>Starting from LKR 1000.00</td>
+                            </tr>
+                            <tr>
+                                <td><button class="accordion">Student Pass <i class="arrow down"></i></button>
+                                  <div class="panel">
+                                    <form action="/action_page.php">
+                                      
+                                      <fieldset>
+                                        <legend>Tickets</legend>
+                                        <p>
+                                        <label>Adult(Graduates) </label>  
+                                        <label>LKR 500.00 </label> 
+                                        <input type="number" id="result3" class ="result" value="0" min="0" max="5">
+                                       
+                                        <br>
+                                      </p>
+                                      <p>
+                                        <label>Children </label>  
+                                        <label>LKR 250.00 </label> 
+                                        <input type="number" id="result4" class ="result" value="0" min="0" max="5">
+                                       
+                                        <br>
+                                      </p>
+                                        <label>Duration</label>   
+                                          <select name="hours" class="hours" id="hours2">
+                                            <option value="0">3 Hours</option>
+                                            <option value="250">1/2 Day</option>
+                                            <option value="500">Full Day</option>
+                                            <option value="1000">2 days</option>
+                                          </select><br>
+                                          
+                                      </fieldset>
+                                      <div class="fav" id="fav2">
+                                        <i></i>
+                                      </div>
+                                      <p>Current Order:</p>
+                                      <div id="itemOrder2" class="itemOrder"> </div> <br><br>
+                                      <label>Current total(LKR): </label>  
+                                          <input type="number" id="totalResult2" class="totalResult" value="0.00"><br>
+                                      <button type="button" id="buttonOrder2" class="buttonOrder">Add to order</button>
+                                    </form>
+                                  </div>
+                                </td>
+                                <td>Starting from LKR 500.00</td>
+                            </tr>
+                            <tr>
+                                <td><button class="accordion">Foreigner Pass <i class="arrow down"></i></button>
+                                  <div class="panel">
+                                    <form action="/action_page.php">
+                                      
+                                      <fieldset>
+                                        <legend>Tickets</legend>
+                                        <p>
+                                        <label>Adult </label>  
+                                        <label>LKR 5000.00 </label> 
+                                        <input type="number" id="result5" class ="result" value="0" min="0" max="5">
+                                       
+                                        <br>
+                                      </p>
+                                      <p>
+                                        <label>Children(Age 3-12) </label>  
+                                        <label>LKR 2500.00 </label> 
+                                        <input type="number" id="result6" class ="result" value="0" min="0" max="5">
+                                       
+                                        <br>
+                                      </p>
+                                        <label>Duration</label>   
+                                          <select name="hours" class="hours" id="hours3">
+                                            <option value="0">3 Hours</option>
+                                            <option value="250">1/2 Day</option>
+                                            <option value="500">Full Day</option>
+                                            <option value="1000">2 days</option>
+                                          </select><br>
+                                       
+                                      </fieldset>
+                                      <div class="fav" id="fav3">
+                                        <i></i>
+                                      </div>
+                                      <p>Current Order:</p>
+                                        <div id="itemOrder3" class="itemOrder"> </div> <br><br>
+                                      <label>Current total(LKR): </label>  
+                                          <input type="number" id="totalResult3" class="totalResult" value="0.00"><br>
+                                      <button type="button" id="buttonOrder3" class="buttonOrder">Add to order</button>
+                                     </form>
+                                  </div>
+                                </td>
+                                <td>Starting from LKR 5000.00</td>
+                            </tr>
+                            <tr>
+                              <td><button class="accordion">Optional Tickets<i class="arrow down"></i></button>
+                                <div class="panel">
+                                  <form action="/action_page.php">
+                                      
+                                    <fieldset>
+                                      <legend>Tickets</legend>
+                                      <p>
+                                      <label>Annual Pass </label>  
+                                      <label>LKR 5000.00 </label> 
+                                      <input type="number" id="result7" class ="result" value="0" min="0" max="5">
+                                     
+                                      <br>
+                                    </p>
+                                    <p>
+                                      <label>Food Tokens  </label>  
+                                      <label>LKR 500.00 </label> 
+                                      <input type="number" id="result8" class ="result" value="0" min="0" max="5">
+                                     
+                                      <br>
+                                    </p>
+                              
+                                    </fieldset>
+                                    <div class="fav" id="fav4">
+                                      <i></i>
+                                    </div>
+                                    <p>Current Order:</p>
+                                        <div id="itemOrder4" class="itemOrder"> </div> <br><br>
+                                    <label>Current total(LKR): </label>  
+                                    <input type="number" id="totalResult4" class="totalResult" value="0.00"><br>
+                                    <button type="button" id="buttonOrder4" class="buttonOrder">Add to order</button>
+                                  </form>
+                                </div>
+                              </td>
+                              <td>Starting from LKR 500.00</td>
+                          </tr>
+                          </tbody>
+                            <tfoot>
+                              <tr>
+                            <td colspan="3">
+                                    <p id="currentOrders">Current Order(s):<br><br> </p>
+                                    <p><label>Total(LKR):  </label>  
+                                    <input type="number" id="total" name="total" value="0.00">
+                                    </p> 
+                                    <button type="button" id="loyaltyButton" class="buttonOrder">Check Loyalty</button>
+                                    <button type="button" id="favoriteButton" class="buttonOrder">Order Favorites</button><br>
+                                  <button type="button" id="buttonPurchase">Place Order</button>
+                                </td>
+                              </tr>
+                                </tfoot>
+                    </table><br><br>
+                    
+                </section>
+                <section class="purchaseSec">
+                <div class="row">
+                  <div class="col-75">
+                    <div class="pContainer">
+                      
+                        <div id="donations">
+                        <h2>DONATIONS</h2>
+                        <p>
+                          <input type="radio" id="donate1" name="donate" value="100" >
+                          <label>LKR 100</label>
+                      </p>
+                      <p>
+                          <input type="radio" id="donate2" name="donate" value="250">
+                          <label>LKR 250</label>
+                      </p>
+                      <p>
+                          <input type="radio" id="donate3" name="donate" value="500">
+                          <label>LKR 500</label>
+                      </p>
+                      <p>
+                        <input type="radio" id="donate4" name="donate" value="1000" >
+                        <label>LKR 1000</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="donate5" name="donate" value="2500">
+                        <label>LKR 2500</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="donate6" name="donate" value="5000">
+                        <label>LKR 5000</label>
+                    </p>
+                    <p>
+                      <input type="radio" id="donate7" name="donate" value="10000">
+                      <label>LKR 10,000</label>
+                  </p>
+                  </div>
+                </div><br><br>
+                <form action="/action_page.php">
+                        <div class="row">
+                          <div class="col-50">
+                          <h1>Billing Address</h1>
+                          <div id="billing">
+                          <p>
+                            <label> Full Name</label>
+                            <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+                          </p>
+                           
+                          <p>
+                            <label> Address</label>
+                            <input type="text" id="address" name="address" placeholder="542 W. 15th Street">
+                          </p>
+                            
+                
+                            <div class="row">
+                              <div class="col-50">
+                                <label>City/State</label>
+                                <input type="text" id="city" name="city" placeholder="New York">
+                              </div>
+                              <div class="col-50">
+                                <label>Zip</label>
+                                <input type="text" id="zip" name="zip" placeholder="10001">
+                              </div>
+                            </div>
+                            <p>
+                              <label> Email</label>
+                              <input type="text" id="email" name="email" placeholder="john@example.com">
+                            </p>
+                          </div>
+                          <div id="cards">
+                          <div class="col-50">
+                            
+                              <h1>Payment</h1>
+                            <label>Payment Type</label>
+                            <div class="icon-container">
+                              <input type="radio"  id="rdbtn1" name="vv">
+                              <label><i class="fa fa-cc-visa" ></i></label><br>
+                              <input type="radio" id="rdbtn2" name="vv">
+                              <label><i class="fa fa-cc-amex" ></i></label><br>
+                              <input type="radio" id="rdbtn3"  name="vv">
+                               <label ><i class="fa fa-cc-mastercard"></i></label><br>
+                               <input type="radio" id="rdbtn4"  name="vv">
+                              <label ><i class="fa fa-cc-paypal"></i></label><br>
+                            
+                              </div>
+              
+                            <label>Name on Card</label>
+                            <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+                            <label>Credit card number</label>
+                            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                            <label>Exp Month</label>
+                            <input type="text" id="expmonth" name="expmonth" placeholder="September">
+                
+                            <div class="row">
+                              <div class="col-50">
+                                <label>Exp Year</label>
+                                <input type="text" id="expyear" name="expyear" placeholder="2018">
+                              </div>
+                              <div class="col-50">
+                                <label>CVV</label>
+                                <input type="text" id="cvv" name="cvv" placeholder="352">
+                              </div>
+                              </div>
+                            
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                        <input type="submit" value="Checkout" id="btnform">
+                      </form>
+            </section>
+        
+        
+        <footer>
+                <div class="footerinfo">
+                    
+                    <h4>FIND US ON</h4>
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                    <a href="#" class="fa fa-fw fa-envelope"></a>
+                </div>
+                <div class="info">
+                    <h2>CONTACT US</h2>
+                    <ul>
+                        <li>Contact Number: +94 112 712 751</li>
+                        <li>Address: 120 Galvihara Rd, Dehiwala-Mount Lavinia</li>
+                        <li>Email: zoosl@slt.lk</li>
+                    </ul>
+                </div><br><br>
+                <div class="copyright">
+                   &copy;2021 APIIT
+                   <br><br>
+                </div>
+                <div class="src">Shehara Pandithasekera. CB009134<br>Email - CB009134@students.apiit.lk<br><br><br>
+                </div>
+                     
+                
+                
+            </footer>
+
+            </main>
+            <script src="scripts/main.js"> </script>
+    </body>
+    
+</html>

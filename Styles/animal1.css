@@ -1,0 +1,258 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.mainNav{
+    position:static;
+    top:15px;
+}
+
+.animal{
+    background-image: url(../images/skin02\(wallpapercave.com\).webp);
+    background-size: cover;
+    height:450px;
+    padding-top:20px;
+}
+#animalHead{
+    color:white;
+}
+.animal img{
+    position: absolute;
+}
+#animalHeader{
+    background-image: url(../images/animalskin\(freevector.com\).webp);
+        background-repeat:repeat;
+        background-clip: border-box;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-top: 20px;
+        font-size: 32px;
+        text-align: center;
+        margin-left: 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+        -webkit-font-smoothing: antialiased;
+        -webkit-text-stroke: 1px white;
+
+}
+.animalpara{
+    margin:40px;
+    border:3px solid white;
+    animation: pulsed 4s infinite;
+    border-left: 20px;
+    border-right: 20px;
+    text-align: justify;
+    font-size:20px;
+}
+
+@keyframes pulsed {
+  0% {
+    border-color:#d36f11;
+  }
+  50% {
+    border-color: rgb(143, 34, 20);
+  }
+  100% {
+    border-color:#d36f11;
+  }
+}
+main h1{
+    text-align: center;
+    color:#a67c56;
+    font-size: 42px;
+    text-transform: uppercase;
+}
+.animalBody{
+    background-color: black;
+    color:white;
+}
+.animalSec img {
+    width: 300px;
+    height:auto;
+    padding:20px;
+
+}
+
+.headNav img{
+    position: absolute;
+    height:50px;
+    width:auto;
+    margin-left: 20px;
+    
+}
+
+.animal .mainNav a:hover{
+    background-color:#b0804b;
+    display: block;
+
+}
+.mainNav ul{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    text-align: center;
+}
+.mainNav a{
+    text-decoration:none;
+    min-height:50px;
+    line-height:50px;
+    color:rgb(255, 255, 255);
+}
+
+
+
+  
+.fa {
+    width:40px;
+    font-size: 20px;
+    text-decoration: none;
+  }
+
+  footer{
+      background-color: #c58d41;
+      overflow: hidden;
+      color: white;
+  }
+  footer ul{
+    list-style-type:none;
+    padding:0;
+    margin:0;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:1fr;
+    justify-items: center;
+    font-size: 10px;
+    
+}
+footer h4{
+    color:#54544c;
+    font-size: 20px;
+}
+footer a{
+    text-decoration:underline;
+    margin:40px;
+    color:white;
+}
+.footer ul{
+    text-decoration:underline;
+    color:white;
+    line-height:.5px;
+    margin:40px;
+
+}
+.info ul,h2{
+    display:block;
+    justify-content: center;
+    margin-left: 40px;
+    font-size: 16px;
+}
+.info h2{
+    font-size: 24px;
+}
+#src{
+    font-size:13px;
+}
+.src{
+    text-align:center;
+}
+.copyright{
+    text-align:center;
+}
+.footerinfo{
+    text-align: center;
+}
+.footerNav{
+    background-color: #c58d41;
+    color:black;
+}
+.footerNav a{
+    text-decoration: none;
+}
+@media only screen and (min-width:900px){
+
+    .mainNav{
+        position:sticky;
+        top:0;
+        margin-left: 20px;
+    } 
+     .mainNav ul{
+        padding:0;
+        margin:20px;
+        display:flex;
+        flex-flow:row wrap;
+        flex-grow: 2;
+        font-size: 18px;
+    }
+    .mainNav li{
+        flex-grow:1;
+        width:calc(25% .2em);
+    }
+    .mainNav a{
+        background-size:40px auto;
+        background-repeat: no-repeat;
+        display:block;
+    }
+    .headNav img{
+        height:70px;
+        margin-top: 10px;
+        
+    }
+    #animalHeader{
+            margin-top: 80px;
+            font-size: 42px;
+    
+    }
+    .animal{
+        height:100px;
+    }
+    .animalSec img {
+        width: 400px;
+        padding:10px;
+        margin:5px;
+    
+    }
+   
+  .fa-facebook {
+    background: #000000;
+    color: white;
+    align-self:center;
+  }
+ 
+  .fa-twitter {
+    background: #000000;
+    color: white;
+  }
+    .fa-youtube {
+        background: #000000;
+        color: white;
+      }
+      .fa-instagram {
+        background: #000000;
+        color: white;
+      }
+      .fa-envelope {
+        background: #000000;
+        color: white;
+      }
+      footer .fa {
+        padding:20px;
+        font-size: 30px;
+        text-decoration: none;
+        border: 1.5px solid #202325;
+        border-radius:10px;
+        justify-items: center;
+      }
+      footer a:hover{
+        color:#54544c;
+        padding:20px;
+    }
+    footer .fa:hover {
+        opacity: 0.9;
+        border-color: #54544c;
+        
+      }
+      footer ul{
+          font-size: 15px;
+      }
+      
+}
